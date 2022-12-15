@@ -20,8 +20,6 @@ def main(input_path: Path, part : int):
             for line in lines:
                 p1, p2 = line[:len(line) // 2], line[len(line) // 2:]
                 common_chars = set(p1).intersection(p2)
-                for c in common_chars: 
-                    ans += dct[c]
                 ans += sum(dct[c] for c in common_chars)
         else: 
             # PART 2
