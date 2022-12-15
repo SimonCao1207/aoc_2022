@@ -7,17 +7,17 @@
 #include<numeric>
 using namespace std;
 
-void printVec(vector<int> v){
-    for(int i: v){
+template <typename T> void printVec(vector<T> v){
+    for(T i: v){
         cout << i << " ";
     }
     cout << "\n";
 }
 
-vector<int> slicing(vector<int>& v, int s, int e){
+template <typename T> vector<T> slicing(vector<T>& v, int s, int e){
     auto start = v.begin() + s;
     auto end = v.begin() + e;
-    vector<int> res(e-s);
+    vector<T> res(e-s);
     copy(start, end, res.begin());
     return res;
 }
@@ -39,9 +39,9 @@ int main(void){
         lstSum.push_back(currentSum);
         f.close();
         sort(lstSum.begin(), lstSum.end(), greater<int>());
-        // printVec(lstSum);
-        vector<int> sliceV = slicing(lstSum, 0, 3);
-        // printVec(sliceV);
+        // printVec<int>(lstSum);
+        vector<int> sliceV = slicing<int>(lstSum, 0, 3);
+        // printVec<int>(sliceV);
         for_each(sliceV.begin(), sliceV.end(), [&](int n){
             ans += n;
         });
