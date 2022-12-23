@@ -7,7 +7,7 @@ Link to event : [here](https://adventofcode.com/)
 ## Program language list
 - **Python** 
 - **C++**
-- Javascript
+- **Javascript**
 - Rust
 - Haskel (good to have)
 - Scala (probably ?)
