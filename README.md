@@ -5,11 +5,12 @@ Link to event : [here](https://adventofcode.com/)
 **GOAL**: solve 25 puzzles this December in multiple languages
 
 ## Program language list
-- **Python** 
-- **C++**
-- **Javascript**
-- Java
-- Golang 
-- Rust (good to have)
-- Haskel (good to have)
-- Scala (probably ?)
+- [X] **Python**
+- [X] **C++**
+- [X] **Javascript**
+- [ ] Java
+- [ ] Golang 
+- [ ] Rust (good to have)
+- [ ] Haskel (good to have)
+- [ ] Scala (probably ?)
+
