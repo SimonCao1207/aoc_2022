@@ -8,8 +8,8 @@ Link to event : [here](https://adventofcode.com/)
 - [X] **Python**
 - [X] **C++**
 - [X] **Javascript**
+- [X] **Golang** 
 - [ ] Java
-- [ ] Golang 
 - [ ] Rust (good to have)
 - [ ] Haskel (good to have)
 - [ ] Scala (probably ?)
