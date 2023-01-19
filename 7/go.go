@@ -39,12 +39,22 @@ func main() {
 			}
 		}
 	}
-	ans := 0
+	ans_1 := 0
 	for _, size := range sizes {
 		if size <= 100000 {
-			ans += size
+			ans_1 += size
 		}
 	}
 
-	fmt.Println("sol: ", ans)
+	ans_2 := 70000000
+	n_space := 30000000 - (70000000 - sizes[0])
+
+	for _, size := range sizes {
+		if size >= n_space && size <= ans_2 {
+			ans_2 = size
+		}
+	}
+
+	fmt.Println("sol for part 1: ", ans_1)
+	fmt.Println("sol for part 2: ", ans_2)
 }
